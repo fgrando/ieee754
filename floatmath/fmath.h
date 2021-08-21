@@ -7,7 +7,7 @@ extern "C" {
 
 #if defined(FLOAT_MATH_EXPORTS)
 #define FLOAT_MATH_API __declspec(dllexport)
-#elif defined(FLOAT_MATH_STATIC)
+#elif defined(FLOAT_MATH_IMPORTS)
 #define FLOAT_MATH_API __declspec(dllimport)
 #else
 #define FLOAT_MATH_API
